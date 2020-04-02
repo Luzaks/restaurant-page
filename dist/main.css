@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100vh;
+    background-color: cornsilk;
+}
+
+@font-face {
+    font-family: "La Piedrita";
+    src: url("../assets/LaPiedrita.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+}
+
+#content {
+    background-image: url("../assets/background/13846.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    width: 100%;
+    height: 100vh;
+}
+
+nav {
+    max-width: 95%;
+    width: 95%;
+    height: 75px;
+    border-radius: 0 0 15px 15px;
+    background-color: darkred;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+
+span {
+    font-family: "La Piedrita", cursive;
+    color: black;
+    font-size: 60px;
+    font-weight: 400;
+}
