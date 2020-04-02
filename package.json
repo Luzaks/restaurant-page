@@ -1,0 +1,28 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "A restaurant page rendered using JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luzaks/restaurant-page.git"
+  },
+  "keywords": [
+    "luzaks",
+    "restaurant",
+    "page"
+  ],
+  "author": "Guadalupe Rangel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Luzaks/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/Luzaks/restaurant-page#readme",
+  "devDependencies": {
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
