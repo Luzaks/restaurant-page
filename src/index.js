@@ -1,12 +1,24 @@
-const tabs = document.querySelectorAll('[data-tab-target]');
-const tabContents = document.querySelectorAll('[data-tab-content]');
+import { listHome, listAbout, listMenu, listContact, header } from './header.js';
 
-tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-        const target = document.querySelector(tab.dataset.tabTarget);
-        tabContents.forEach(tabContent => {
-            tabContent.classList.remove ('active')
-        });
-        target.classList.add('active')
-    })
+const bodyTag = document.getElementsByTagName('body')[0];
+const divContent = document.getElementById('content')[0];
+
+bodyTag.appendChild(header());
+divContent.appendChild();
+
+listHome.addEventListener('click', () => {
+    bodyTag.appendChild(header());
+    divContent.appendChild();
+});
+
+listAbout.addEventListener('click', () => {
+    bodyTag.appendChild(header());
+});
+
+listMenu.addEventListener( 'click', () => {
+    bodyTag.appendChild(header());
+});
+
+listContact.addEventListener('click', () => {
+    bodyTag.appendChild(header());
 });
