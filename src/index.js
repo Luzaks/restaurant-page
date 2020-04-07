@@ -2,6 +2,7 @@ import { listHome, listAbout, listMenu, listContact, header } from './header.js'
 import { backgroundLayer, mainTag, tabContainer, backgroundContainer } from  './background-container.js';
 import {home} from './home.js';
 import {about} from "./about";
+import {menu} from './menu.js';
 
 
 const bodyTag = document.getElementsByTagName('body')[0];
@@ -26,6 +27,8 @@ listAbout.addEventListener('click', () => {
 
 listMenu.addEventListener( 'click', () => {
     bodyTag.appendChild(header());
+    divContent.appendChild(backgroundContainer());
+    tabsContainer.appendChild(menu());
 });
 
 listContact.addEventListener('click', () => {
