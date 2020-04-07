@@ -1,7 +1,6 @@
+import { backgroundLayer, mainTag, tabContainer, backgroundContainer } from  './background-container.js';
+
 export const home = () => {
-    const backgroundLayer = document.createElement('div');
-    const mainTag = document.createElement('main');
-    const tabContainer = document.createElement('div');
     const homeDiv = document.createElement('div');
     const spanHeader = document.createElement('span');
     const spanSlogan = document.createElement('span');
@@ -9,9 +8,7 @@ export const home = () => {
     const simpleBr = document.createElement('br');
     const menuSlogan = document.createElement('span');
 
-    backgroundLayer.className = 'background-layer';
-    mainTag.className = 'tab-content';
-    tabContainer.className = 'tabs';
+
     homeDiv.className = 'home';
     spanHeader.className = 'span-restaurant-description';
     spanSlogan.className = 'inner-restaurant-description';
@@ -25,13 +22,8 @@ export const home = () => {
 
     homeDiv.setAttribute('id', 'home');
     homeDiv.setAttribute('data-tab-content', '');
+    homeDiv.classList.add('active');
 
-    backgroundLayer.className = 'background-layer';
-    mainTag.className = 'tab-content';
-    tabContainer.className = 'tabs';
-    backgroundLayer.appendChild(mainTag);
-    mainTag.appendChild(tabContainer);
-    tabContainer.appendChild(homeDiv);
     homeDiv.appendChild(spanHeader);
     homeDiv.appendChild(spanSlogan);
     homeDiv.appendChild(menuHr);
@@ -39,5 +31,5 @@ export const home = () => {
     homeDiv.appendChild(menuSlogan);
 
 
-    return backgroundLayer;
+    return homeDiv;
 };
