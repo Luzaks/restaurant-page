@@ -3,6 +3,7 @@ import { backgroundLayer, mainTag, tabContainer, backgroundContainer } from  './
 import {home} from './home.js';
 import {about} from "./about";
 import {menu} from './menu.js';
+import {contact} from './contact.js';
 
 
 const bodyTag = document.getElementsByTagName('body')[0];
@@ -33,4 +34,6 @@ listMenu.addEventListener( 'click', () => {
 
 listContact.addEventListener('click', () => {
     bodyTag.appendChild(header());
+    divContent.appendChild(backgroundContainer());
+    tabsContainer.appendChild(contact());
 });

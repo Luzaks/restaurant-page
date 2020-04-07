@@ -4,6 +4,8 @@ export const about = () => {
     const headerTab = document.createElement('h2');
     let simpleHr = document.createElement('hr');
     let simpleBr = document.createElement('br');
+    let simpleHrOne = document.createElement('hr');
+    let simpleBrOne = document.createElement('br');
     const welcomeSpan = document.createElement('span');
     const innerWelcomeSpan = document.createElement('span');
     const welcomeDescription = document.createElement('span');
@@ -33,6 +35,8 @@ export const about = () => {
     welcomeSpan.appendChild(innerWelcomeSpan);
     aboutContainer.appendChild(welcomeSpan);
     aboutContainer.appendChild(welcomeDescription);
+    aboutContainer.appendChild(simpleBrOne);
+    aboutContainer.appendChild(simpleHrOne);
 
     return aboutDiv;
 };
