@@ -1,3 +1,5 @@
+import {listContact} from "./header";
+
 export const contact = () => {
     const contactDiv = document.createElement('div');
     const innerContactDiv = document.createElement('div');
@@ -12,7 +14,8 @@ export const contact = () => {
 
     contactDiv.setAttribute('id', 'contact');
     contactDiv.setAttribute('class', 'contact-content');
-    contactDiv.setAttribute('data-tab-content', '');
+    let contentContact = document.createAttribute('data-tab-content');
+    contactDiv.setAttributeNode(contentContact);
     innerContactDiv.className = 'inner-contact-container';
     contactHeader.className = 'tab-headers';
 

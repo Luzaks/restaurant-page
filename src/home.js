@@ -1,7 +1,8 @@
 import { backgroundLayer, mainTag, tabContainer, backgroundContainer } from  './background-container.js';
+import {listHome} from './header.js';
+const homeDiv = document.createElement('div');
 
 export const home = () => {
-    const homeDiv = document.createElement('div');
     const spanHeader = document.createElement('span');
     const spanSlogan = document.createElement('span');
     const menuHr = document.createElement('hr');
@@ -14,6 +15,7 @@ export const home = () => {
     spanSlogan.className = 'inner-restaurant-description';
     menuHr.className = 'menu-hr';
     menuSlogan.className = 'algerian-font';
+    homeDiv.classList.add('active');
 
     spanHeader.innerHTML = '&#149;Bistrot Restaurant&#149;';
     spanSlogan.innerHTML = 'dans le couloir';
@@ -21,7 +23,8 @@ export const home = () => {
 
 
     homeDiv.setAttribute('id', 'home');
-    homeDiv.setAttribute('data-tab-content', '');
+    let contentHome = document.createAttribute('data-tab-content');
+    homeDiv.setAttributeNode(contentHome);
     homeDiv.classList.add('active');
 
     homeDiv.appendChild(spanHeader);
@@ -33,3 +36,7 @@ export const home = () => {
 
     return homeDiv;
 };
+
+export {
+    homeDiv
+}

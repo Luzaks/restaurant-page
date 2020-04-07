@@ -1,3 +1,5 @@
+import {listAbout} from "./header";
+
 export const about = () => {
     const aboutDiv = document.createElement('div');
     const aboutContainer = document.createElement('div');
@@ -26,7 +28,8 @@ export const about = () => {
         'of the french cuisine in an intimate and relaxed atmosphere.';
 
     aboutDiv.setAttribute('id', 'about');
-    aboutDiv.setAttribute('data-tab-content', '');
+    let contentAbout = document.createAttribute('data-tab-content');
+    aboutDiv.setAttributeNode(contentAbout);
 
     aboutDiv.appendChild(aboutContainer);
     aboutContainer.appendChild(headerTab);

@@ -1,3 +1,5 @@
+import {listMenu} from "./header";
+
 export const menu = () => {
 
     const menuContainer = document.createElement('div');
@@ -61,7 +63,8 @@ export const menu = () => {
 
     menuContainer.setAttribute('id', 'menu');
     menuContainer.setAttribute('class', 'menu-content');
-    menuContainer.setAttribute('data-tab-content', '');
+    let contentMenu = document.createAttribute('data-tab-content');
+    menuContainer.setAttributeNode(contentMenu);
 
 
     innerMenuContainer.className = 'inner-menu-content';
