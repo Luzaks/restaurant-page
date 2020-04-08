@@ -198,14 +198,14 @@ hr {
 .inner-about-container,
 .inner-contact-container,
 .inner-menu-content {
-    width: 684px;
-    height: 531px;
+    width: 716px;
+    height: 547px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-family: "Constantia", sans-serif;
-    font-size: 18px;
+    font-size: 1.3rem;
     border: 4px double #E8E8E8;
     background-color: rgba(0,0,0, 0.5);
     background-image: url("../assets/background/art-deco-border.svg");
@@ -215,15 +215,29 @@ hr {
     background-position-y: center;
     text-align: justify;
     padding: 4% 7%;
+    border-radius: 15px;
+}
+
+.inner-contact-container {
+    background-image: url("../assets/background/art-nouveau.svg");
+    border: none;
+    width: 624px;
+    height: 450px;
 }
 
 .inner-menu-content {
-    font-size: 15px;
+    background-image: url("../assets/background/art-nouveau-frame.svg");
+    border: none;
+    font-size: 1.05rem;
+    width: 45%;
+    height: 95%;
+    padding: 2% 3%;
 }
 
 .cursive {
     font-style: italic;
     text-decoration: underline;
+    font-size: 1.3rem;
 }
 
 .menu-images {

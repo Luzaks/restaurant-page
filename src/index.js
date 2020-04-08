@@ -1,6 +1,6 @@
 import { listHome, listAbout, listMenu, listContact, header } from './header.js';
-import { backgroundLayer, mainTag, tabContainer, backgroundContainer } from  './background-container.js';
-import {homeDiv, home} from './home.js';
+import { backgroundContainer } from  './background-container.js';
+import {home} from './home.js';
 import {about} from "./about";
 import {menu} from './menu.js';
 import {contact} from './contact.js';
@@ -17,39 +17,36 @@ tabsContainer.appendChild(about());
 tabsContainer.appendChild(menu());
 tabsContainer.appendChild(contact());
 
+const removingSections = (tabContents) => {
+    tabContents.forEach(tabContent => {
+        tabContent.classList.remove('active');
+    });
+};
+
+const tabContent = () => {
+    return document.querySelectorAll('[data-tab-content]');
+};
+
 listHome.addEventListener('click', () => {
     const targetHome = document.querySelector(listHome.dataset.tabTarget);
-    const tabContents = document.querySelectorAll('[data-tab-content]');
-    tabContents.forEach(tabContents => {
-        tabContents.classList.remove('active');
-    });
+    removingSections(tabContent());
     targetHome.classList.add('active');
 });
 
 listAbout.addEventListener('click', () => {
     const targetAbout = document.querySelector(listAbout.dataset.tabTarget);
-    const tabContents = document.querySelectorAll('[data-tab-content]');
-    tabContents.forEach(tabContents => {
-        tabContents.classList.remove('active');
-    });
+    removingSections(tabContent());
     targetAbout.classList.add('active');
 });
 
 listMenu.addEventListener( 'click', () => {
     const targetMenu = document.querySelector(listMenu.dataset.tabTarget);
-    const tabContents = document.querySelectorAll('[data-tab-content]');
-    tabContents.forEach(tabContents => {
-        tabContents.classList.remove('active');
-    });
+    removingSections(tabContent());
     targetMenu.classList.add('active');
 });
 
 listContact.addEventListener('click', () => {
     const targetContact = document.querySelector(listContact.dataset.tabTarget);
-    const tabContents = document.querySelectorAll('[data-tab-content]');
-    tabContents.forEach(tabContents => {
-        tabContents.classList.remove('active');
-    });
+    removingSections(tabContent());
     targetContact.classList.add('active');
-
 });
