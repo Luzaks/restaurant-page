@@ -1,15 +1,12 @@
-import {listMenu} from "./header";
+export default function menu() {
+  const menuContainer = document.createElement('div');
+  const innerMenuContainer = document.createElement('div');
+  const menuHeader = document.createElement('h2');
+  const tableMenu = document.createElement('table');
 
-export const menu = () => {
+  menuHeader.innerHTML = 'Menu à la carte';
 
-    const menuContainer = document.createElement('div');
-    const innerMenuContainer = document.createElement('div');
-    const menuHeader = document.createElement('h2');
-    const tableMenu = document.createElement('table');
-
-    menuHeader.innerHTML = 'Menu à la carte';
-
-    tableMenu.innerHTML = `<tr>
+  tableMenu.innerHTML = `<tr>
                                     <th></th>
                                     <th>Price</th>
                                 </tr>
@@ -61,17 +58,17 @@ export const menu = () => {
                                     <td>46 €</td>
                                 </tr>`;
 
-    menuContainer.setAttribute('id', 'menu');
-    menuContainer.setAttribute('class', 'menu-content');
-    let contentMenu = document.createAttribute('data-tab-content');
-    menuContainer.setAttributeNode(contentMenu);
+  menuContainer.setAttribute('id', 'menu');
+  menuContainer.setAttribute('class', 'menu-content');
+  const contentMenu = document.createAttribute('data-tab-content');
+  menuContainer.setAttributeNode(contentMenu);
 
 
-    innerMenuContainer.className = 'inner-menu-content';
-    menuHeader.className = ' tab-headers';
+  innerMenuContainer.className = 'inner-menu-content';
+  menuHeader.className = ' tab-headers';
 
-    menuContainer.appendChild(innerMenuContainer);
-    innerMenuContainer.appendChild(menuHeader);
-    innerMenuContainer.appendChild(tableMenu);
-    return menuContainer;
-};
+  menuContainer.appendChild(innerMenuContainer);
+  innerMenuContainer.appendChild(menuHeader);
+  innerMenuContainer.appendChild(tableMenu);
+  return menuContainer;
+}

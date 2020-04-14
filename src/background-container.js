@@ -7,15 +7,15 @@ mainTag.className = 'tab-content';
 tabContainer.className = 'tabs';
 
 const backgroundContainer = () => {
-    backgroundLayer.appendChild(mainTag);
-    mainTag.appendChild(tabContainer);
+  backgroundLayer.appendChild(mainTag);
+  mainTag.appendChild(tabContainer);
 
-    return backgroundLayer;
+  return backgroundLayer;
 };
 
 export {
-    backgroundLayer,
-    mainTag,
-    tabContainer,
-    backgroundContainer
-}
+  backgroundLayer,
+  mainTag,
+  tabContainer,
+  backgroundContainer,
+};

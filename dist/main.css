@@ -226,11 +226,7 @@ hr {
 }
 
 .inner-menu-content {
-    background-image: url("../assets/background/art-nouveau-frame.svg");
-    border: none;
     font-size: 1.05rem;
-    width: 45%;
-    height: 95%;
     padding: 2% 3%;
 }
 
