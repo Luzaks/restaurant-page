@@ -6,6 +6,7 @@
 
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
+* [Contributions](#contributions)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 
@@ -28,12 +29,18 @@ Link for project specifications: [Odin-Project](https://www.theodinproject.com/c
 *   Bootstrap4 - Positioning
 *   JavaScript - Behaviour and Structure
 
+
+### 🤝 Contributions
+
+*   You can make contributions to this project by contacting, previously, with the author directly through the contact information shared below, in order to get in touch and create an issue in the repo. 
+
+
 <!-- CONTACT & SUPPORT -->
 ## Contact & Support
 
-🙍 Guadalupe Rangel - kanemekanik@gmail.com - ☄
+🙍 Guadalupe Rangel - kanemekanik@gmail.com - [LinkedIn](https://www.linkedin.com/in/rangel-guadalupe/) - ☄
 
-You liked it? ⭐️ Star my project!!!
+You liked it? ⭐️ Star the project!!!
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
